@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<remoteConfig>
+	<!-- hosts配置 -->
+	<hosts>
+		<host>
+			<hostid>localhost</hostid>
+			<appkey></appkey>
+			<url></url>
+		</host>
+	    	<host>
+            <hostid>hqposapp</hostid>
+            <appkey>77CC42F6BED1A12F71B648DCC07AF88E</appkey>
+           	<url>http://158.143.10.100:19281/hqposapp/Service</url>
+        </host>
+	</hosts>
+
+	<remoters>
+    <!-- posapp 会员注册 -->
+		<remoter>
+			<esb_service_id>2H020000000001</esb_service_id>
+			<service_api>nbps.router.default</service_api>
+			<router>default</router>
+			<exector>default</exector>
+			<host_ids>hqposapp</host_ids>
+			<ext_params>
+					<sid>S905000905001</sid>
+			</ext_params>
+		</remoter>
+    <!-- posapp会员查询接口 -->
+		<remoter>
+			<esb_service_id>2W020000000001</esb_service_id>
+			<service_api>nbps.router.default</service_api>
+			<router>default</router>
+			<exector>default</exector>
+			<host_ids>hqposapp</host_ids>
+			<ext_params>
+					<sid>S801000801002</sid>
+			</ext_params>
+		</remoter>
+
+		<!-- hqposapp 促销单品查询 -->		
+		<remoter>
+			<esb_service_id>2W020000000006</esb_service_id>
+			<service_api>nbps.router.default</service_api>
+			<router>default</router>
+			<exector>default</exector>
+			<host_ids>hqposapp</host_ids>
+			<ext_params>
+					<sid>S101000101014</sid>
+			</ext_params>
+		</remoter>					
+		<!-- hqposapp 订单应付金额接口 -->		
+		<remoter>
+			<esb_service_id>2W020000000007</esb_service_id>
+			<service_api>nbps.router.default</service_api>
+			<router>default</router>
+			<exector>default</exector>
+			<host_ids>hqposapp</host_ids>
+			<ext_params>
+					<sid>S101000101015</sid>
+			</ext_params>
+		</remoter>								
+		<!-- hqposapp 订单上传接口（返券） -->		
+		<remoter>
+			<esb_service_id>2W020000000008</esb_service_id>
+			<service_api>nbps.router.default</service_api>
+			<router>default</router>
+			<exector>default</exector>
+			<host_ids>hqposapp</host_ids>
+			<ext_params>
+					<sid>S101000101016</sid>
+			</ext_params>
+		</remoter>				
+	 <!-- hqposapp 订单可用券计算 -->		
+		<remoter>
+			<esb_service_id>2W020000000009</esb_service_id>
+			<service_api>nbps.router.default</service_api>
+			<router>default</router>
+			<exector>default</exector>
+			<host_ids>hqposapp</host_ids>
+			<ext_params>
+				 <sid>S101000101017</sid>
+			</ext_params>
+		</remoter>		
+	 <!-- hqposapp 小票打印查询接口 -->		
+		<remoter>
+			<esb_service_id>2W020000000010</esb_service_id>
+			<service_api>nbps.router.default</service_api>
+			<router>default</router>
+			<exector>default</exector>
+			<host_ids>hqposapp</host_ids>
+			<ext_params>
+				 <sid>S101000101018</sid>
+			</ext_params>
+		</remoter>
+    <!-- hqposapp 小票公众信息接口 -->		
+		<remoter>
+			<esb_service_id>2W020000000011</esb_service_id>
+			<service_api>nbps.router.default</service_api>
+			<router>default</router>
+			<exector>default</exector>
+			<host_ids>hqposapp</host_ids>
+			<ext_params>
+				 <sid>S101000101019</sid>
+			</ext_params>
+		</remoter>	
+	<!-- POSAPP POS登录认证 -->		
+			<remoter>
+			<esb_service_id>2W020000000012</esb_service_id>
+			<service_api>nbps.router.default</service_api>
+			<router>default</router>
+			<exector>default</exector>
+			<host_ids>hqposapp</host_ids>
+			<ext_params>
+				 <sid>S101000101004</sid>
+			</ext_params>
+		</remoter>
+					 <!-- POSAPP POS修改收银员密码 -->				
+			<remoter>
+			<esb_service_id>2W020000000013</esb_service_id>
+			<service_api>nbps.router.default</service_api>
+			<router>default</router>
+			<exector>default</exector>
+			<host_ids>hqposapp</host_ids>
+			<ext_params>
+				 <sid>S101000101005</sid>
+			</ext_params>
+		</remoter>
+		
+			<!-- POSAPP 收银员退出POS -->				
+			<remoter>
+			<esb_service_id>2W020000000014</esb_service_id>
+			<service_api>nbps.router.default</service_api>
+			<router>default</router>
+			<exector>default</exector>
+			<host_ids>hqposapp</host_ids>
+			<ext_params>
+				 <sid>S101000101006</sid>
+			</ext_params>
+		</remoter>			
+
+			<!-- POSAPP POS操作授权 -->			
+			<remoter>
+			<esb_service_id>2W020000000015</esb_service_id>
+			<service_api>nbps.router.default</service_api>
+			<router>default</router>
+			<exector>default</exector>
+			<host_ids>hqposapp</host_ids>
+			<ext_params>
+				 <sid>S101000101007</sid>
+			</ext_params>
+		</remoter>								 
+
+	 <!-- hqposapp 异步推送CPS，申请券号接口 -->		
+		<remoter>
+			<esb_service_id>2W020000000016</esb_service_id>
+			<service_api>nbps.router.default</service_api>
+			<router>default</router>
+			<exector>default</exector>
+			<host_ids>hqposapp</host_ids>
+			<ext_params>
+				 <sid>S101000101020</sid>
+			</ext_params>
+		</remoter>	
+	 <!-- hqposapp 异步推送CPS，打印完成通知接口 -->		
+		<remoter>
+			<esb_service_id>2W020000000017</esb_service_id>
+			<service_api>nbps.router.default</service_api>
+			<router>default</router>
+			<exector>default</exector>
+			<host_ids>hqposapp</host_ids>
+			<ext_params>
+				 <sid>S101000101021</sid>
+			</ext_params>
+		</remoter>
+
+	 <!-- hqposapp 调用线下的券状态查询接口 -->		
+		<remoter>
+			<esb_service_id>2W020000000019</esb_service_id>
+			<service_api>nbps.router.default</service_api>
+			<router>default</router>
+			<exector>default</exector>
+			<host_ids>hqposapp</host_ids>
+			<ext_params>
+				<sid>S108000108007</sid>
+		  </ext_params>		
+		</remoter>
+                   <!-- hqposapp 调用线上付款码解析接口 -->                                     
+                   <remoter>
+                            <esb_service_id>2W020000000020</esb_service_id>
+                            <service_api>nbps.router.default</service_api>
+                            <router>default</router>
+                            <exector>default</exector>
+                            <host_ids>hqposapp</host_ids>
+                            <ext_params>
+                                     <sid>S101000101022</sid>
+                              </ext_params>
+                   </remoter>
+
+         <!-- hqposapp 新线下发券接口 -->                                     
+                   <remoter>
+                            <esb_service_id>2W020000000022</esb_service_id>
+                            <service_api>nbps.router.default</service_api>
+                            <router>default</router>
+                            <exector>default</exector>
+                            <host_ids>hqposapp</host_ids>
+                             <ext_params>
+                            <sid>S101000101023</sid>
+                             </ext_params>
+                   </remoter>                   
+                   <!-- hqposapp 券可用消费规则接口 -->                                     
+                   <remoter>
+                            <esb_service_id>2W020000000023</esb_service_id>
+                            <service_api>nbps.router.default</service_api>
+                            <router>default</router>
+                            <exector>default</exector>
+                            <host_ids>hqposapp</host_ids>
+                             <ext_params>
+                            <sid>S101000101024</sid>
+                             </ext_params>
+                   </remoter>
+                   <!-- hqposapp 小票流水数据回传门店pos库 --> 
+		<remoter>
+			<esb_service_id>2W020000000024</esb_service_id>
+			<service_api>nbps.router.default</service_api>
+			<router>default</router>
+			<exector>default</exector>
+			<host_ids>hqposapp</host_ids>
+			<ext_params>
+				 <sid>S101000101025</sid>
+			</ext_params>
+		</remoter>
+
+	</remoters>		
+</remoteConfig>
